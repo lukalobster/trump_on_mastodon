@@ -44,9 +44,12 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add posts.md last_post_id.txt images/ 2>/dev/null || true
+          # Stage all relevant files (including new untracked ones)
+          git add -f posts.md last_post_id.txt 2>/dev/null || true
+          git add -f images/   2>/dev/null || true
 
-          if git diff --cached --quiet; then
+          # Use git status --porcelain to detect BOTH modified and new files
+          if [ -z "$(git status --porcelain)" ]; then
             echo "Nothing changed – no commit needed."
           else
             git commit -m "chore: new Truth post detected $(date -u +'%Y-%m-%d %H:%M UTC')"
