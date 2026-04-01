@@ -1,4 +1,23 @@
 
+## Post detected at 2026-04-01 20:01:34 UTC
+
+**Posted on Truth Social:** Apr 1, 2026 · 6:06 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116330778720988222](https://truthsocial.com/@realDonaldTrump/116330778720988222)
+
+**Post ID:** `116330778720988222`
+
+### Text
+
+Tonight at 6:24 P.M. EST, for the first time in over 50 YEARS, America is going back to the Moon! Artemis II, among the most powerful rockets ever built, is launching our Brave Astronauts farther into Deep Space than any human has EVER gone. We are WINNING, in Space, on Earth, and everywhere in between — Economically, Militarily, and now, BEYOND THE STARS. Nobody comes close! America doesn’t just compete, we DOMINATE, and the whole World is watching. God bless our incredible Astronauts, God bless NASA, and God bless the Greatest Nation ever to exist, the United States of America! President DONALD J. TRUMP
+
+### Post Card
+
+![Post card](images/116330778720988222_card.png)
+
+
+---
+
 ## Post detected at 2026-04-01 17:26:51 UTC
 
 **Posted on Truth Social:** Apr 1, 2026 · 4:52 PM UTC
@@ -21,3 +40,4 @@ The American People should use this opportunity to reflect on the tens of millio
 
 
 ---
+
