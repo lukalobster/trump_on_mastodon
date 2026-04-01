@@ -174,19 +174,22 @@ def fetch_latest_post(token: str) -> dict | None:
 # ── Avatar cache ───────────────────────────────────────────────────────────────
 
 def ensure_avatar(avatar_url: str) -> str:
-    """Download avatar once and cache it. Returns local path or empty string."""
+    """Download avatar fresh on every run. Returns local path or empty string."""
     os.makedirs(IMAGES_DIR, exist_ok=True)
-    if os.path.exists(AVATAR_CACHE) and os.path.getsize(AVATAR_CACHE) > 1000:
-        return AVATAR_CACHE
     try:
-        r = requests.get(avatar_url, timeout=20)
+        print(f"[{_now()}] Downloading avatar from: {avatar_url[:80]}")
+        r = requests.get(avatar_url, timeout=20, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; bot/1.0)"
+        })
         r.raise_for_status()
-        with open(AVATAR_CACHE, "wb") as f:
+        # Save as JPEG to avoid format confusion
+        avatar_jpeg = os.path.join(IMAGES_DIR, "trump_avatar.jpg")
+        with open(avatar_jpeg, "wb") as f:
             f.write(r.content)
-        print(f"[{_now()}] Avatar cached → {AVATAR_CACHE}")
-        return AVATAR_CACHE
+        print(f"[{_now()}] Avatar downloaded → {avatar_jpeg} ({len(r.content):,} bytes)")
+        return avatar_jpeg
     except Exception as e:
-        print(f"[{_now()}] WARNING: Could not cache avatar: {e}", file=sys.stderr)
+        print(f"[{_now()}] WARNING: Could not download avatar: {e}", file=sys.stderr)
         return ""
 
 # ── Font loader ────────────────────────────────────────────────────────────────
@@ -319,11 +322,16 @@ def render_card(post: dict, avatar_path: str) -> str:
     av_x, av_y = PAD, y
     if avatar_path and os.path.exists(avatar_path):
         try:
-            av = _circle_crop(Image.open(avatar_path), AVATAR_SIZE)
+            av_img = Image.open(avatar_path)
+            print(f"[{_now()}] Avatar loaded: mode={av_img.mode}, size={av_img.size}")
+            av = _circle_crop(av_img, AVATAR_SIZE)
             canvas.paste(av, (av_x, av_y), av)
-        except Exception:
+            print(f"[{_now()}] Avatar pasted onto card OK")
+        except Exception as e:
+            print(f"[{_now()}] WARNING: Avatar render failed: {e}", file=sys.stderr)
             draw.ellipse([av_x, av_y, av_x + AVATAR_SIZE, av_y + AVATAR_SIZE], fill=(180, 180, 180))
     else:
+        print(f"[{_now()}] WARNING: Avatar path not found: {avatar_path!r}")
         draw.ellipse([av_x, av_y, av_x + AVATAR_SIZE, av_y + AVATAR_SIZE], fill=(180, 180, 180))
 
     # Name + verified badge + handle
