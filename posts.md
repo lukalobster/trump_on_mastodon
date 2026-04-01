@@ -1,4 +1,23 @@
 
+## Post detected at 2026-04-01 23:57:06 UTC
+
+**Posted on Truth Social:** Apr 1, 2026 · 11:15 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116331993306678428](https://truthsocial.com/@realDonaldTrump/116331993306678428)
+
+**Post ID:** `116331993306678428`
+
+### Text
+
+It is my Great Honor to nominate Jeffrey Kuntz to serve as Judge on the United States District Court for the Southern District of Florida. As the Highly Respected Chief Judge of Florida’s Fourth District Court of Appeal, Jeffrey has been TOUGH and SMART, and delivered strong results for the Sunshine State. A proud graduate of Boston College, who earned his J.D. at Suffolk University Law School, Jeffrey has demonstrated his commitment to the Rule of Law throughout his career. He will always defend our Great Constitution, and put our Country, FIRST. Congratulations Jeffrey!
+
+### Post Card
+
+![Post card](images/116331993306678428_card.png)
+
+
+---
+
 ## Post detected at 2026-04-01 20:01:34 UTC
 
 **Posted on Truth Social:** Apr 1, 2026 · 6:06 PM UTC
@@ -17,6 +36,7 @@ Tonight at 6:24 P.M. EST, for the first time in over 50 YEARS, America is going 
 
 
 ---
+
 
 ## Post detected at 2026-04-01 17:26:51 UTC
 
@@ -40,4 +60,5 @@ The American People should use this opportunity to reflect on the tens of millio
 
 
 ---
+
 
