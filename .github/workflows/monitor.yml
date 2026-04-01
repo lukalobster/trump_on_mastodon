@@ -12,7 +12,7 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
 
     steps:
       # ── 1. Checkout the repository ──────────────────────────────────────────
@@ -30,7 +30,7 @@ jobs:
 
       # ── 3. Install dependencies ─────────────────────────────────────────────
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests pillow
 
       # ── 4. Run the monitor script ───────────────────────────────────────────
       - name: Run monitor
