@@ -1,4 +1,23 @@
 
+## Post detected at 2026-04-02 11:56:53 UTC
+
+**Posted on Truth Social:** Apr 2, 2026 · 11:35 AM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116334902567890770](https://truthsocial.com/@realDonaldTrump/116334902567890770)
+
+**Post ID:** `116334902567890770`
+
+### Text
+
+Victor Davis Hanson Reveals He Was Approached by Chinese Operative Fang Fang But Didn’t Fall for it Like ‘Idiot’ Eric Swalwell: https://www.thegatewaypundit.com/2026/04/victor-davis-hanson-reveals-he-was-approached-chinese/
+
+### Post Card
+
+![Post card](images/116334902567890770_card.png)
+
+
+---
+
 ## Post detected at 2026-04-02 04:01:24 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 3:43 AM UTC
@@ -19,6 +38,7 @@ https://m.youtube.com/watch?v=-luF0nLlM3A&pp=0gcJCcQBo7VqN5tD
 
 ---
 
+
 ## Post detected at 2026-04-01 23:57:06 UTC
 
 **Posted on Truth Social:** Apr 1, 2026 · 11:15 PM UTC
@@ -34,26 +54,6 @@ It is my Great Honor to nominate Jeffrey Kuntz to serve as Judge on the United S
 ### Post Card
 
 ![Post card](images/116331993306678428_card.png)
-
-
----
-
-
-## Post detected at 2026-04-01 20:01:34 UTC
-
-**Posted on Truth Social:** Apr 1, 2026 · 6:06 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116330778720988222](https://truthsocial.com/@realDonaldTrump/116330778720988222)
-
-**Post ID:** `116330778720988222`
-
-### Text
-
-Tonight at 6:24 P.M. EST, for the first time in over 50 YEARS, America is going back to the Moon! Artemis II, among the most powerful rockets ever built, is launching our Brave Astronauts farther into Deep Space than any human has EVER gone. We are WINNING, in Space, on Earth, and everywhere in between — Economically, Militarily, and now, BEYOND THE STARS. Nobody comes close! America doesn’t just compete, we DOMINATE, and the whole World is watching. God bless our incredible Astronauts, God bless NASA, and God bless the Greatest Nation ever to exist, the United States of America! President DONALD J. TRUMP
-
-### Post Card
-
-![Post card](images/116330778720988222_card.png)
 
 
 ---
