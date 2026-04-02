@@ -35,6 +35,8 @@ except ImportError:
     PILLOW_OK = False
 
 # ── Configuration ──────────────────────────────────────────────────────────────
+NOTO_EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+
 TRUTH_SOCIAL_BASE   = "https://truthsocial.com/api/v1"
 TRUMP_ACCOUNT_ID    = "107780257626128497"   # @realDonaldTrump permanent ID
 SCRAPEDO_API        = "https://api.scrape.do/"
@@ -43,11 +45,8 @@ LAST_ID_FILE        = "last_post_id.txt"
 IMAGES_DIR          = "images"
 MAX_POSTS           = 3   # keep only the N most recent posts in posts.md
 
-# Avatar URL – fetched once and cached locally as images/trump_avatar.png
-TRUMP_AVATAR_URL = (
-    "https://static-assets-1.truthsocial.com/tmtg:prime-ts-assets/"
-    "accounts/avatars/107/780/257/626/128/497/original/454286ac07a6f6e6.jpeg"
-)
+# Avatar – bundled directly in the repo as images/trump_avatar.png
+# No download needed: just commit the file to the repository once.
 AVATAR_CACHE = os.path.join(IMAGES_DIR, "trump_avatar.png")
 
 # Font – Inter variable font bundled in the repo under fonts/
@@ -146,7 +145,7 @@ def fetch_latest_post(token: str) -> dict | None:
     account      = raw.get("account", {})
     display_name = account.get("display_name", "Donald J. Trump")
     username     = account.get("username", "realDonaldTrump")
-    avatar_url   = account.get("avatar", TRUMP_AVATAR_URL)
+    avatar_url   = account.get("avatar", "")
 
     # ── Timestamp ─────────────────────────────────────────────────────────────
     created_at = raw.get("created_at", "")
@@ -173,24 +172,15 @@ def fetch_latest_post(token: str) -> dict | None:
 
 # ── Avatar cache ───────────────────────────────────────────────────────────────
 
-def ensure_avatar(avatar_url: str) -> str:
-    """Download avatar fresh on every run. Returns local path or empty string."""
-    os.makedirs(IMAGES_DIR, exist_ok=True)
-    try:
-        print(f"[{_now()}] Downloading avatar from: {avatar_url[:80]}")
-        r = requests.get(avatar_url, timeout=20, headers={
-            "User-Agent": "Mozilla/5.0 (compatible; bot/1.0)"
-        })
-        r.raise_for_status()
-        # Save as JPEG to avoid format confusion
-        avatar_jpeg = os.path.join(IMAGES_DIR, "trump_avatar.jpg")
-        with open(avatar_jpeg, "wb") as f:
-            f.write(r.content)
-        print(f"[{_now()}] Avatar downloaded → {avatar_jpeg} ({len(r.content):,} bytes)")
-        return avatar_jpeg
-    except Exception as e:
-        print(f"[{_now()}] WARNING: Could not download avatar: {e}", file=sys.stderr)
-        return ""
+def ensure_avatar() -> str:
+    """Return the path to the bundled avatar PNG. No download needed."""
+    if os.path.exists(AVATAR_CACHE) and os.path.getsize(AVATAR_CACHE) > 500:
+        print(f"[{_now()}] Avatar found: {AVATAR_CACHE}")
+        return AVATAR_CACHE
+    print(f"[{_now()}] WARNING: Bundled avatar not found at {AVATAR_CACHE!r}. "
+          "Please commit images/trump_avatar.png to the repository.",
+          file=sys.stderr)
+    return ""
 
 # ── Font loader ────────────────────────────────────────────────────────────────
 
@@ -280,11 +270,19 @@ def render_card(post: dict, avatar_path: str) -> str:
     line_h       = int(font_text.size * 1.45)
     text_block_h = len(text_lines) * line_h + max(0, len(text_lines) - 1) * LINE_GAP
 
-    # Load post image (if any)
+    # Load post image (if any) – must go through scrape.do (direct access = 403)
     post_img = None
     if post["image_url"]:
         try:
-            r = requests.get(post["image_url"], timeout=30)
+            scrapedo_token = os.environ.get("SCRAPEDO_TOKEN", "")
+            img_params = {
+                "token":   scrapedo_token,
+                "url":     post["image_url"],
+                "geoCode": "us",
+                "super":   "true",
+                "render":  "false",
+            }
+            r = requests.get(SCRAPEDO_API, params=img_params, timeout=30)
             r.raise_for_status()
             post_img = Image.open(io.BytesIO(r.content)).convert("RGB")
             img_w = CARD_W - 2 * PAD
@@ -372,8 +370,32 @@ def render_card(post: dict, avatar_path: str) -> str:
 
     # Timestamp + brand
     draw.text((PAD, y), post["created_at"], font=font_meta, fill=META_COL)
-    brand_w = int(draw.textlength("TRUTH SOCIAL", font=font_brand))
-    draw.text((CARD_W - PAD - brand_w, y), "TRUTH SOCIAL", font=font_brand, fill=TS_PURPLE)
+
+    # Render "TRUTH SOCIAL" text
+    brand_text = "TRUTH SOCIAL"
+    brand_w    = int(draw.textlength(brand_text, font=font_brand))
+    brand_h    = font_brand.size
+    brand_x    = CARD_W - PAD - brand_w
+    draw.text((brand_x, y), brand_text, font=font_brand, fill=TS_PURPLE)
+
+    # Render 🤡 emoji to the left of the brand text
+    try:
+        emoji_font = ImageFont.truetype(NOTO_EMOJI_FONT, 109)
+        em_bbox    = ImageDraw.Draw(Image.new("RGBA", (1, 1))).textbbox(
+                         (0, 0), "\U0001f921", font=emoji_font, embedded_color=True)
+        em_w, em_h = em_bbox[2] - em_bbox[0], em_bbox[3] - em_bbox[1]
+        scale      = brand_h / em_h
+        em_sw      = max(1, int(em_w * scale))
+        em_layer   = Image.new("RGBA", (em_w, em_h), (0, 0, 0, 0))
+        ImageDraw.Draw(em_layer).text(
+            (0, -em_bbox[1]), "\U0001f921", font=emoji_font, embedded_color=True)
+        em_layer   = em_layer.resize((em_sw, brand_h), Image.LANCZOS)
+        em_x       = brand_x - em_sw - 4 * S
+        canvas_rgba = canvas.convert("RGBA")
+        canvas_rgba.paste(em_layer, (em_x, y), em_layer)
+        canvas.paste(canvas_rgba.convert("RGB"), (0, 0))
+    except Exception as e:
+        print(f"[{_now()}] WARNING: Emoji render failed: {e}")
 
     # Save
     os.makedirs(IMAGES_DIR, exist_ok=True)
@@ -457,8 +479,8 @@ def main():
 
     print(f"[{_now()}] New post detected (previous: {last_id or 'none'}) – saving …")
 
-    # ── Ensure avatar is cached ───────────────────────────────────────────────
-    avatar_path = ensure_avatar(post["avatar_url"])
+    # ── Load bundled avatar ───────────────────────────────────────────────────
+    avatar_path = ensure_avatar()
 
     # ── Render post card ──────────────────────────────────────────────────────
     card_path = render_card(post, avatar_path)
