@@ -1,4 +1,24 @@
 
+## Post detected at 2026-04-02 04:01:24 UTC
+
+**Posted on Truth Social:** Apr 2, 2026 · 3:43 AM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116333046471233968](https://truthsocial.com/@realDonaldTrump/116333046471233968)
+
+**Post ID:** `116333046471233968`
+
+### Text
+
+Donald Trump - Clip from every year from 1980 to 2024:
+https://m.youtube.com/watch?v=-luF0nLlM3A&pp=0gcJCcQBo7VqN5tD
+
+### Post Card
+
+![Post card](images/116333046471233968_card.png)
+
+
+---
+
 ## Post detected at 2026-04-01 23:57:06 UTC
 
 **Posted on Truth Social:** Apr 1, 2026 · 11:15 PM UTC
@@ -18,6 +38,7 @@ It is my Great Honor to nominate Jeffrey Kuntz to serve as Judge on the United S
 
 ---
 
+
 ## Post detected at 2026-04-01 20:01:34 UTC
 
 **Posted on Truth Social:** Apr 1, 2026 · 6:06 PM UTC
@@ -33,30 +54,6 @@ Tonight at 6:24 P.M. EST, for the first time in over 50 YEARS, America is going 
 ### Post Card
 
 ![Post card](images/116330778720988222_card.png)
-
-
----
-
-
-## Post detected at 2026-04-01 17:26:51 UTC
-
-**Posted on Truth Social:** Apr 1, 2026 · 4:52 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116330487356155648](https://truthsocial.com/@realDonaldTrump/116330487356155648)
-
-**Post ID:** `116330487356155648`
-
-### Text
-
-Republicans fully support our Great Men and Women of Law Enforcement, maybe the word should be, LOVE! America thanks each and every one of our wonderful Police, Border Patrol, ICE, and others, for their work to protect our Cities, Towns, Streets and, indeed, our Country itself.
-Unlike Republicans, Democrats want to DEFUND the Police, Border Patrol, and all Immigration Enforcement. They want to allow Criminals, the Mentally Insane, and Lunatics from all over the World to come into our Country, totally unvetted and unchecked, putting Americans in serious danger.
-That’s why we are going forward to fund our incredible ICE Agents and Border Patrol through a process that doesn’t need Radical Left Democrat votes, and bypasses the Senate Filibuster (which should be repealed, IMMEDIATELY!), working in close conjunction with House Speaker Mike Johnson and Senate Leader John Thune. We are going to work as fast, and as focused, as possible to replenish funding for our Border and ICE Agents, and the Radical Left Democrats won’t be able to stop us. We will not allow them to hurt the families of these Great Patriots by defunding them. I am asking that the Bill be on my desk NO LATER than June 1st. Our Law Enforcement Officers and the American People should not have to wait until the Democrats see reason or, learn the hard way through the Polls. Hopefully, everyone will be voting REPUBLICAN for the Midterms. Through simple unification, Republicans can do this without the Democrats!
-In the meantime, we will continue to use funding from THE GREAT BIG BEAUTIFUL BILL, which is giving Record Tax Rebates to Citizens all over the Country, to ensure that ICE and Border Patrol Agents are paid ON TIME, and IN FULL, as we have been doing for them throughout the Democrat Shutdown. Immigration Enforcement will continue, and our Border will remain secure, with no Murderers, Drug Dealers, or Criminals of any kind entering our Country.
-The American People should use this opportunity to reflect on the tens of millions of Illegal Aliens, including many Violent Criminals such as Murderers, Rapists, Human Traffickers, Child Molesters, and more, that Joe Biden and his Far Left Liberal Democrat Cronies in Congress (led by Hakeem Jeffries and Chuck Schumer) invited and allowed into our Country for the four years before I took office. These Radical, Weak, and Incompetent Democrats have made clear that if they resume power, they will never again provide funding to secure our Border, or enforce our Immigration Laws. The Democrats are the Party of Open Borders for Criminals, Crime, Zero Immigration Enforcement, Defunding the Police, and Allowing the Worst of the Worst to have “Get Out of Jail Free” Cards. They want America to be OPEN AND AVAILABLE to Violent Criminals, Thugs, and Lowlifes, not our Great and Loving American Patriots. Don’t forget that in November. WIN THE MIDTERMS! Thank you for your attention to this matter. President DONALD J. TRUMP
-
-### Post Card
-
-![Post card](images/116330487356155648_card.png)
 
 
 ---
