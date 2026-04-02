@@ -1,6 +1,7 @@
 # @realDonaldTrump Truth Social Monitor → Mastodon
 
 Monitors [@realDonaldTrump](https://truthsocial.com/@realDonaldTrump) on Truth Social every 30 minutes and automatically posts any new content to a Mastodon account.
+LIVE Bot on Mastodon https://mastodon.social/@trump_truth
 
 ## How it works
 
