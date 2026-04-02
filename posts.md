@@ -1,4 +1,23 @@
 
+## Post detected at 2026-04-02 18:10:25 UTC
+
+**Posted on Truth Social:** Apr 2, 2026 · 5:43 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116336350249896927](https://truthsocial.com/@realDonaldTrump/116336350249896927)
+
+**Post ID:** `116336350249896927`
+
+### Text
+
+Davy Crockett, obviously a distant relative of Jasmine Crockett, and a very High IQ Frontiersman, would be proud of the legacy that he began long ago, and especially Jasmine’s Great Success as a Politician from the Great State of Texas! President DONALD J. TRUMP
+
+### Post Card
+
+![Post card](images/116336350249896927_card.png)
+
+
+---
+
 ## Post detected at 2026-04-02 15:44:49 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 2:33 PM UTC
@@ -18,6 +37,7 @@ Thank you to all of our Great Congressional Republicans, House Speaker Mike John
 
 ---
 
+
 ## Post detected at 2026-04-02 12:05:13 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 11:58 AM UTC
@@ -33,26 +53,6 @@ Bad, and very boring singer, Bruce Springsteen, who looks like a dried up prune 
 ### Post Card
 
 ![Post card](images/116334990675013056_card.png)
-
-
----
-
-
-## Post detected at 2026-04-02 11:56:53 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 11:35 AM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116334902567890770](https://truthsocial.com/@realDonaldTrump/116334902567890770)
-
-**Post ID:** `116334902567890770`
-
-### Text
-
-Victor Davis Hanson Reveals He Was Approached by Chinese Operative Fang Fang But Didn’t Fall for it Like ‘Idiot’ Eric Swalwell: https://www.thegatewaypundit.com/2026/04/victor-davis-hanson-reveals-he-was-approached-chinese/
-
-### Post Card
-
-![Post card](images/116334902567890770_card.png)
 
 
 ---
