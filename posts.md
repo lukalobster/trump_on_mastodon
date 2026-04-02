@@ -1,4 +1,23 @@
 
+## Post detected at 2026-04-02 15:44:49 UTC
+
+**Posted on Truth Social:** Apr 2, 2026 · 2:33 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116335602592937497](https://truthsocial.com/@realDonaldTrump/116335602592937497)
+
+**Post ID:** `116335602592937497`
+
+### Text
+
+Thank you to all of our Great Congressional Republicans, House Speaker Mike Johnson, and Senate Leader John Thune, for their work this week. Republicans are UNIFIED, and moving forward on a plan that will reload funding for our FANTASTIC Border Patrol and Immigration Enforcement Officers. Because the Democrats are fully and 100% committed to the Radical Left Policy of Open Borders and Zero Immigration Enforcement (which will hopefully cost them dearly in the Midterms!), allowing Murderers and Criminals of all types into our Country, totally unchecked and unvetted, I will soon sign an order to pay ALL of the incredible employees at the Department of Homeland Security. Their families have suffered far too long at the hands of the Extreme Liberal “Leaders,” Cryin’ Chuck Schumer and Hakeem “High Tax” Jeffries. Nevertheless, help is on the way for our Brave and Patriotic Public Servants who have continued to work hard, and do their part to protect and defend our Country. Thank you for your attention to this matter! President DONALD J. TRUMP
+
+### Post Card
+
+![Post card](images/116335602592937497_card.png)
+
+
+---
+
 ## Post detected at 2026-04-02 12:05:13 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 11:58 AM UTC
@@ -18,6 +37,7 @@ Bad, and very boring singer, Bruce Springsteen, who looks like a dried up prune 
 
 ---
 
+
 ## Post detected at 2026-04-02 11:56:53 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 11:35 AM UTC
@@ -33,27 +53,6 @@ Victor Davis Hanson Reveals He Was Approached by Chinese Operative Fang Fang But
 ### Post Card
 
 ![Post card](images/116334902567890770_card.png)
-
-
----
-
-
-## Post detected at 2026-04-02 04:01:24 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 3:43 AM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116333046471233968](https://truthsocial.com/@realDonaldTrump/116333046471233968)
-
-**Post ID:** `116333046471233968`
-
-### Text
-
-Donald Trump - Clip from every year from 1980 to 2024:
-https://m.youtube.com/watch?v=-luF0nLlM3A&pp=0gcJCcQBo7VqN5tD
-
-### Post Card
-
-![Post card](images/116333046471233968_card.png)
 
 
 ---
