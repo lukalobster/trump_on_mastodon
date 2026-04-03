@@ -1,4 +1,23 @@
 
+## Post detected at 2026-04-03 00:00:30 UTC
+
+**Posted on Truth Social:** Apr 2, 2026 · 10:32 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116337483523761845](https://truthsocial.com/@realDonaldTrump/116337483523761845)
+
+**Post ID:** `116337483523761845`
+
+### Text
+
+I would like to thank the hardworking Commissioners and Staff of the National Capital Planning Commission, who just voted overwhelmingly, 8-1, to approve the magnificent White House Ballroom now rising on this Hallowed Ground. I am pleased to announce that even Board Member Senator Rand Paul, known as an extraordinarily difficult vote, voted a strong YES. For more than 150 years, every President has dreamt about having a Ballroom at the White House to accommodate people for Grand Parties, State Visits, and even, in the Modern Day, Inaugurations. I am honored to be the first President to finally get this much-needed project, which is on time and under budget, underway. When completed, it will be the Greatest and Most Beautiful Ballroom of its kind anywhere in the World, and a fabulous complement to our Beautiful and Storied White House! President DONALD J. TRUMP
+
+### Post Card
+
+![Post card](images/116337483523761845_card.png)
+
+
+---
+
 ## Post detected at 2026-04-02 18:10:25 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 5:43 PM UTC
@@ -18,6 +37,7 @@ Davy Crockett, obviously a distant relative of Jasmine Crockett, and a very High
 
 ---
 
+
 ## Post detected at 2026-04-02 15:44:49 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 2:33 PM UTC
@@ -33,26 +53,6 @@ Thank you to all of our Great Congressional Republicans, House Speaker Mike John
 ### Post Card
 
 ![Post card](images/116335602592937497_card.png)
-
-
----
-
-
-## Post detected at 2026-04-02 12:05:13 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 11:58 AM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116334990675013056](https://truthsocial.com/@realDonaldTrump/116334990675013056)
-
-**Post ID:** `116334990675013056`
-
-### Text
-
-Bad, and very boring singer, Bruce Springsteen, who looks like a dried up prune who has suffered greatly from the work of a really bad plastic surgeon, has long had a horrible and incurable case of Trump Derangement Syndrome, sometimes referred to as TDS. The guy is a total loser who spews hate against a President who won a Landslide Election, including the popular vote, all Seven Swing States, and 86% of the Counties across America. Under Sleepy Joe and the Dems, our Country was DEAD, and now we have the “hottest” Country, by far, anywhere in the World. MAGA SHOULD BOYCOTT HIS OVERPRICED CONCERTS, WHICH SUCK. SAVE YOUR HARD EARNED MONEY. AMERICA IS BACK!!! President DJT
-
-### Post Card
-
-![Post card](images/116334990675013056_card.png)
 
 
 ---
