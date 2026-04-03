@@ -1,24 +1,24 @@
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
-**Posted on Truth Social:** Apr 3, 2026 · 2:41 AM UTC
+**Posted on Truth Social:** Apr 3, 2026 · 1:21 AM UTC
 
-**Source:** [https://truthsocial.com/@realDonaldTrump/116338464010194156](https://truthsocial.com/@realDonaldTrump/116338464010194156)
+**Source:** [https://truthsocial.com/@realDonaldTrump/116338150251966000](https://truthsocial.com/@realDonaldTrump/116338150251966000)
 
-**Post ID:** `116338464010194156`
+**Post ID:** `116338150251966000`
 
 ### Text
 
-Our Military, the greatest and most powerful (by far!) anywhere in the World, hasn’t even started destroying what’s left in Iran. Bridges next, then Electric Power Plants! New Regime leadership knows what has to be done, and has to be done, FAST! President DONALD J.TRUMP
+Is Bruce Springsteen going to sue his plastic surgeon?
 
 ### Post Card
 
-![Post card](images/116338464010194156_card.png)
+![Post card](images/116338150251966000_card.png)
 
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 10:32 PM UTC
 
@@ -37,7 +37,7 @@ I would like to thank the hardworking Commissioners and Staff of the National Ca
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 10:29 PM UTC
 
@@ -56,7 +56,7 @@ I would like to thank the hardworking Commissioners and Staff of the National Ca
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 10:29 PM UTC
 
@@ -75,7 +75,7 @@ I would like to thank the hardworking Commissioners and Staff of the National Ca
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 5:43 PM UTC
 
@@ -94,7 +94,7 @@ Davy Crockett, obviously a distant relative of Jasmine Crockett, and a very High
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 5:17 PM UTC
 
@@ -113,7 +113,7 @@ Pam Bondi is a Great American Patriot and a loyal friend, who faithfully served 
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 4:37 PM UTC
 
@@ -132,7 +132,7 @@ The biggest bridge in Iran comes tumbling down, never to be used again — Much 
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 4:15 PM UTC
 
@@ -151,7 +151,7 @@ The biggest bridge in Iran comes tumbling down, never to be used again — Much 
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 2:33 PM UTC
 
@@ -170,7 +170,7 @@ Thank you to all of our Great Congressional Republicans, House Speaker Mike John
 
 ---
 
-## Post detected at 2026-04-03 06:35:01 UTC
+## Post detected at 2026-04-03 08:36:27 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 11:58 AM UTC
 
