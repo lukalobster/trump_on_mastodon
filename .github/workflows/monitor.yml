@@ -28,17 +28,21 @@ jobs:
           python-version: "3.11"
           cache: "pip"
 
-      # ── 3. Install dependencies ─────────────────────────────────────────────
+      # ── 3. Install emoji font (needed for 🤡 rendering on the card) ─────────
+      - name: Install emoji font
+        run: sudo apt-get install -y fonts-noto-color-emoji
+
+      # ── 4. Install Python dependencies ──────────────────────────────────────
       - name: Install dependencies
         run: pip install requests pillow
 
-      # ── 4. Run the monitor script ───────────────────────────────────────────
+      # ── 5. Run the monitor script ───────────────────────────────────────────
       - name: Run monitor
         env:
           SCRAPEDO_TOKEN: ${{ secrets.SCRAPEDO_TOKEN }}
         run: python monitor.py
 
-      # ── 5. Commit & push any changes ────────────────────────────────────────
+      # ── 6. Commit & push any changes ────────────────────────────────────────
       - name: Commit and push changes
         run: |
           git config user.name  "github-actions[bot]"
