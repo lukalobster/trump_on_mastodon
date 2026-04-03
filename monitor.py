@@ -41,9 +41,12 @@ TRUTH_SOCIAL_BASE   = "https://truthsocial.com/api/v1"
 TRUMP_ACCOUNT_ID    = "107780257626128497"   # @realDonaldTrump permanent ID
 SCRAPEDO_API        = "https://api.scrape.do/"
 POSTS_FILE          = "posts.md"
-LAST_ID_FILE        = "last_post_id.txt"
+LAST_ID_FILE        = "last_post_id.txt"   # legacy – kept for mastodon_poster.py compat
+SEEN_IDS_FILE       = "seen_post_ids.txt"  # tracks last N seen post IDs
 IMAGES_DIR          = "images"
-MAX_POSTS           = 3   # keep only the N most recent posts in posts.md
+MAX_POSTS           = 10  # keep only the N most recent posts in posts.md
+FETCH_LIMIT         = 5   # how many posts to fetch per run
+SEEN_IDS_MAX        = 20  # how many post IDs to remember (prevents re-posting)
 
 # Avatar – bundled directly in the repo as images/trump_avatar.png
 # No download needed: just commit the file to the repository once.
@@ -104,23 +107,11 @@ def _scrapedo_get_json(url: str, token: str) -> list | dict:
 
 # ── Post fetcher ───────────────────────────────────────────────────────────────
 
-def fetch_latest_post(token: str) -> dict | None:
-    url = (
-        f"{TRUTH_SOCIAL_BASE}/accounts/{TRUMP_ACCOUNT_ID}/statuses"
-        f"?exclude_replies=true&limit=1"
-    )
-    print(f"[{_now()}] Fetching latest post from Truth Social …")
-    try:
-        posts = _scrapedo_get_json(url, token)
-    except Exception as e:
-        print(f"[{_now()}] ERROR: API request failed: {e}", file=sys.stderr)
+def _parse_raw_post(raw: dict) -> dict | None:
+    """Parse a single raw API post dict into our internal format."""
+    post_id = raw.get("id", "")
+    if not post_id:
         return None
-
-    if not isinstance(posts, list) or len(posts) == 0:
-        print(f"[{_now()}] No posts returned from API.")
-        return None
-
-    raw = posts[0]
 
     # ── Extract text ──────────────────────────────────────────────────────────
     text = html_to_text(raw.get("content", ""))
@@ -155,7 +146,6 @@ def fetch_latest_post(token: str) -> dict | None:
     except Exception:
         created_at_fmt = created_at
 
-    post_id  = raw.get("id", "")
     post_url = raw.get("url", f"https://truthsocial.com/@realDonaldTrump/{post_id}")
 
     return {
@@ -169,6 +159,29 @@ def fetch_latest_post(token: str) -> dict | None:
         "username":     username,
         "avatar_url":   avatar_url,
     }
+
+
+def fetch_recent_posts(token: str) -> list[dict]:
+    """Fetch the last FETCH_LIMIT posts from @realDonaldTrump. Returns list oldest-first."""
+    url = (
+        f"{TRUTH_SOCIAL_BASE}/accounts/{TRUMP_ACCOUNT_ID}/statuses"
+        f"?exclude_replies=true&limit={FETCH_LIMIT}"
+    )
+    print(f"[{_now()}] Fetching last {FETCH_LIMIT} posts from Truth Social …")
+    try:
+        posts = _scrapedo_get_json(url, token)
+    except Exception as e:
+        print(f"[{_now()}] ERROR: API request failed: {e}", file=sys.stderr)
+        return []
+
+    if not isinstance(posts, list) or len(posts) == 0:
+        print(f"[{_now()}] No posts returned from API.")
+        return []
+
+    parsed = [p for raw in posts if (p := _parse_raw_post(raw)) is not None]
+    # API returns newest-first; reverse so we process oldest-first
+    parsed.reverse()
+    return parsed
 
 # ── Avatar cache ───────────────────────────────────────────────────────────────
 
@@ -407,15 +420,41 @@ def render_card(post: dict, avatar_path: str) -> str:
 # ── File I/O ───────────────────────────────────────────────────────────────────
 
 def load_last_post_id() -> str:
+    """Legacy: read single ID from last_post_id.txt (used for migration)."""
     if os.path.exists(LAST_ID_FILE):
         with open(LAST_ID_FILE, "r", encoding="utf-8") as f:
             return f.read().strip()
     return ""
 
 
-def save_last_post_id(post_id: str) -> None:
+def load_seen_ids() -> set:
+    """Load the set of already-seen post IDs from seen_post_ids.txt."""
+    seen = set()
+    # Migrate from legacy last_post_id.txt if seen_post_ids.txt doesn't exist yet
+    if not os.path.exists(SEEN_IDS_FILE):
+        legacy = load_last_post_id()
+        if legacy:
+            seen.add(legacy)
+        return seen
+    with open(SEEN_IDS_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            pid = line.strip()
+            if pid:
+                seen.add(pid)
+    return seen
+
+
+def save_seen_ids(seen: set, latest_id: str) -> None:
+    """Persist the seen IDs list, keeping at most SEEN_IDS_MAX entries."""
+    seen.add(latest_id)
+    ids_list = list(seen)
+    if len(ids_list) > SEEN_IDS_MAX:
+        ids_list = ids_list[-SEEN_IDS_MAX:]
+    with open(SEEN_IDS_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(ids_list) + "\n")
+    # Also update legacy file with the most recent ID (for mastodon_poster.py compatibility)
     with open(LAST_ID_FILE, "w", encoding="utf-8") as f:
-        f.write(post_id)
+        f.write(latest_id)
 
 
 def _render_post_md(post: dict, card_path: str) -> str:
@@ -434,15 +473,17 @@ def _render_post_md(post: dict, card_path: str) -> str:
     return "\n".join(lines)
 
 
-def save_posts_file(new_post_block: str) -> None:
-    existing_blocks: list[str] = []
+def save_posts_file(new_post_blocks: list) -> None:
+    """Prepend new post blocks to posts.md, keeping at most MAX_POSTS total."""
+    existing_blocks = []
     if os.path.exists(POSTS_FILE):
         with open(POSTS_FILE, "r", encoding="utf-8") as f:
             raw = f.read()
         parts = re.split(r"(?=\n## Post detected at |\A## Post detected at )", raw)
         existing_blocks = [p for p in parts if p.strip() and "## Post detected at" in p]
 
-    all_blocks = [new_post_block] + existing_blocks
+    # new_post_blocks is oldest-first; reverse so newest ends up at top of file
+    all_blocks = list(reversed(new_post_blocks)) + existing_blocks
     all_blocks = all_blocks[:MAX_POSTS]
 
     with open(POSTS_FILE, "w", encoding="utf-8") as f:
@@ -460,37 +501,49 @@ def main():
         print("ERROR: SCRAPEDO_TOKEN environment variable is not set.", file=sys.stderr)
         sys.exit(1)
 
-    # ── Fetch latest post ─────────────────────────────────────────────────────
-    post = fetch_latest_post(token)
-    if not post:
-        print(f"[{_now()}] Could not fetch post – exiting without changes.")
+    # ── Fetch last FETCH_LIMIT posts ────────────────────────────────────────────────────────
+    posts = fetch_recent_posts(token)
+    if not posts:
+        print(f"[{_now()}] Could not fetch posts – exiting without changes.")
         sys.exit(0)
 
-    print(f"[{_now()}] Post ID   : {post['post_id']}")
-    print(f"[{_now()}] Created   : {post['created_at']}")
-    print(f"[{_now()}] Text      : {post['text'][:120]!r}")
-    print(f"[{_now()}] Image URL : {(post['image_url'][:80] + '…') if post['image_url'] else '(none)'}")
+    print(f"[{_now()}] Fetched {len(posts)} post(s) from API.")
 
-    # ── Compare with last saved post ──────────────────────────────────────────
-    last_id = load_last_post_id()
-    if post["post_id"] == last_id:
-        print(f"[{_now()}] Post unchanged – nothing to do.")
+    # ── Load seen IDs ──────────────────────────────────────────────────────────────────
+    seen_ids = load_seen_ids()
+    print(f"[{_now()}] Known post IDs: {len(seen_ids)}")
+
+    # ── Filter to only new posts ───────────────────────────────────────────────────────────
+    new_posts = [p for p in posts if p["post_id"] not in seen_ids]
+    if not new_posts:
+        print(f"[{_now()}] All posts already seen – nothing to do.")
         sys.exit(0)
 
-    print(f"[{_now()}] New post detected (previous: {last_id or 'none'}) – saving …")
+    print(f"[{_now()}] {len(new_posts)} new post(s) to process.")
 
-    # ── Load bundled avatar ───────────────────────────────────────────────────
+    # ── Load bundled avatar (once, reused for all cards) ───────────────────────────────
     avatar_path = ensure_avatar()
 
-    # ── Render post card ──────────────────────────────────────────────────────
-    card_path = render_card(post, avatar_path)
+    # ── Process each new post (oldest first) ───────────────────────────────────────────
+    new_blocks = []
+    latest_id = ""
+    for post in new_posts:
+        print(f"[{_now()}] Processing post {post['post_id']} – {post['created_at']}")
+        print(f"[{_now()}]   Text: {post['text'][:100]!r}")
 
-    # ── Save to posts.md ──────────────────────────────────────────────────────
-    post_block = _render_post_md(post, card_path)
-    save_posts_file(post_block)
-    save_last_post_id(post["post_id"])
+        card_path = render_card(post, avatar_path)
+        block = _render_post_md(post, card_path)
+        new_blocks.append(block)
+        seen_ids.add(post["post_id"])
+        latest_id = post["post_id"]
 
-    print(f"[{_now()}] ── Done ──")
+    # ── Save all new posts to posts.md ──────────────────────────────────────────────────
+    save_posts_file(new_blocks)
+
+    # ── Update seen IDs state ────────────────────────────────────────────────────────────
+    save_seen_ids(seen_ids, latest_id)
+
+    print(f"[{_now()}] ── Done: {len(new_blocks)} new post(s) saved ──")
 
 
 if __name__ == "__main__":
