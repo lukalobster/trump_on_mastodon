@@ -1,5 +1,5 @@
 
-## Post detected at 2026-04-04 05:45:18 UTC
+## Post detected at 2026-04-04 05:49:15 UTC
 
 **Posted on Truth Social:** Apr 4, 2026 · 3:21 AM UTC
 
@@ -20,6 +20,26 @@ Believers and people of faith find safe harbor in Trump's White House this Easte
 
 ## Post detected at 2026-04-04 05:45:18 UTC
 
+**Posted on Truth Social:** Apr 4, 2026 · 3:21 AM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116344282496536118](https://truthsocial.com/@realDonaldTrump/116344282496536118)
+
+**Post ID:** `116344282496536118`
+
+### Text
+
+Believers and people of faith find safe harbor in Trump's White House this Easter: https://justthenews.com/government/white-house/he-risen-faith-finds-safe-harbor-trump-white-house
+
+### Post Card
+
+![Post card](images/116344282496536118_card.png)
+
+
+---
+
+
+## Post detected at 2026-04-04 05:45:18 UTC
+
 **Posted on Truth Social:** Apr 4, 2026 · 3:03 AM UTC
 
 **Source:** [https://truthsocial.com/@realDonaldTrump/116344212584161103](https://truthsocial.com/@realDonaldTrump/116344212584161103)
@@ -36,6 +56,7 @@ Believers and people of faith find safe harbor in Trump's White House this Easte
 
 
 ---
+
 
 ## Post detected at 2026-04-04 05:45:18 UTC
 
@@ -56,6 +77,7 @@ Third rate news “anchor” Jonathan Karl of ABC Fake News, the worst and most 
 
 ---
 
+
 ## Post detected at 2026-04-04 05:45:18 UTC
 
 **Posted on Truth Social:** Apr 3, 2026 · 11:10 PM UTC
@@ -74,6 +96,7 @@ Third rate news “anchor” Jonathan Karl of ABC Fake News, the worst and most 
 
 
 ---
+
 
 ## Post detected at 2026-04-04 05:45:18 UTC
 
@@ -94,6 +117,7 @@ A very happy and blessed Good Friday to all, especially to the 186,000 Americans
 
 ---
 
+
 ## Post detected at 2026-04-04 05:45:18 UTC
 
 **Posted on Truth Social:** Apr 3, 2026 · 7:20 PM UTC
@@ -112,6 +136,7 @@ KEEP THE OIL, ANYONE?
 
 
 ---
+
 
 ## Post detected at 2026-04-04 05:45:18 UTC
 
@@ -132,6 +157,7 @@ With a little more time, we can easily OPEN THE HORMUZ STRAIT, TAKE THE OIL, & M
 
 ---
 
+
 ## Post detected at 2026-04-04 05:45:18 UTC
 
 **Posted on Truth Social:** Apr 3, 2026 · 12:05 PM UTC
@@ -150,6 +176,7 @@ Vice President JD Vance is now in charge of “FRAUD” in the United States. It
 
 
 ---
+
 
 ## Post detected at 2026-04-04 05:45:18 UTC
 
@@ -170,21 +197,3 @@ Is Bruce Springsteen going to sue his plastic surgeon?
 
 ---
 
-## Post detected at 2026-04-04 05:45:18 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 10:32 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116337483523761845](https://truthsocial.com/@realDonaldTrump/116337483523761845)
-
-**Post ID:** `116337483523761845`
-
-### Text
-
-I would like to thank the hardworking Commissioners and Staff of the National Capital Planning Commission, who just voted overwhelmingly, 8-1, to approve the magnificent White House Ballroom now rising on this Hallowed Ground. I am pleased to announce that even Board Member Senator Rand Paul, known as an extraordinarily difficult vote, voted a strong YES. For more than 150 years, every President has dreamt about having a Ballroom at the White House to accommodate people for Grand Parties, State Visits, and even, in the Modern Day, Inaugurations. I am honored to be the first President to finally get this much-needed project, which is on time and under budget, underway. When completed, it will be the Greatest and Most Beautiful Ballroom of its kind anywhere in the World, and a fabulous complement to our Beautiful and Storied White House! President DONALD J. TRUMP
-
-### Post Card
-
-![Post card](images/116337483523761845_card.png)
-
-
----
