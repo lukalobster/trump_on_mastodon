@@ -2,60 +2,75 @@ name: Trump Truth Social Monitor
 
 on:
   schedule:
-    # Runs every 30 minutes
     - cron: "*/30 * * * *"
-  workflow_dispatch:   # allow manual trigger from the Actions tab
+  workflow_dispatch:
 
 permissions:
-  contents: write      # needed to commit posts.md, last_post_id.txt, images/
+  contents: write
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
 
     steps:
-      # ── 1. Checkout the repository ──────────────────────────────────────────
+      # ── 1. Checkout ─────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # ── 2. Set up Python ────────────────────────────────────────────────────
+      # ── 2. Python ───────────────────────────────────────────────────────────
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
 
-      # ── 3. Install emoji font (needed for 🤡 rendering on the card) ─────────
+      # ── 3. Emoji font ────────────────────────────────────────────────────────
       - name: Install emoji font
         run: sudo apt-get install -y fonts-noto-color-emoji
 
-      # ── 4. Install Python dependencies ──────────────────────────────────────
+      # ── 4. Dependencies ──────────────────────────────────────────────────────
       - name: Install dependencies
         run: pip install requests pillow
 
-      # ── 5. Run the monitor script ───────────────────────────────────────────
+      # ── 5. Run monitor ───────────────────────────────────────────────────────
       - name: Run monitor
         env:
           SCRAPINGANT_TOKEN: ${{ secrets.SCRAPINGANT_TOKEN }}
         run: python monitor_scrapingant.py
 
-      # ── 6. Commit & push any changes ────────────────────────────────────────
-      - name: Commit and push changes
+      # ── 6. Commit monitor output ─────────────────────────────────────────────
+      - name: Commit monitor changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Stage all relevant files (including new untracked ones)
-          git add -f posts.md last_post_id.txt 2>/dev/null || true
-          git add -f images/   2>/dev/null || true
-
-          # Use git status --porcelain to detect BOTH modified and new files
+          git add -f posts.md last_post_id.txt seen_post_ids.txt 2>/dev/null || true
+          git add -f images/ 2>/dev/null || true
           if [ -z "$(git status --porcelain)" ]; then
-            echo "Nothing changed – no commit needed."
+            echo "No new posts – skipping commit."
           else
             git commit -m "chore: new Truth post detected $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      # ── 7. Post to Mastodon ──────────────────────────────────────────────────
+      - name: Post to Mastodon
+        env:
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+        run: python mastodon_poster.py
+
+      # ── 8. Commit Mastodon state ─────────────────────────────────────────────
+      - name: Commit Mastodon state
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f last_mastodon_post_id.txt 2>/dev/null || true
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing posted – no commit needed."
+          else
+            git commit -m "chore: mastodon post published $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
