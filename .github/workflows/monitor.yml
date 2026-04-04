@@ -39,8 +39,8 @@ jobs:
       # ── 5. Run the monitor script ───────────────────────────────────────────
       - name: Run monitor
         env:
-          SCRAPEDO_TOKEN: ${{ secrets.SCRAPEDO_TOKEN }}
-        run: python monitor.py
+          SCRAPINGANT_TOKEN: ${{ secrets.SCRAPINGANT_TOKEN }}
+        run: python monitor_scrapingant.py
 
       # ── 6. Commit & push any changes ────────────────────────────────────────
       - name: Commit and push changes
