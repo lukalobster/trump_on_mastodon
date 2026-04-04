@@ -42,11 +42,13 @@ jobs:
         run: python monitor_scrapingant.py
 
       # ── 6. Commit monitor output ─────────────────────────────────────────────
+      # Also stages last_mastodon_post_id.txt so it is never lost between runs
       - name: Commit monitor changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f posts.md last_post_id.txt seen_post_ids.txt 2>/dev/null || true
+          git add -f last_mastodon_post_id.txt 2>/dev/null || true
           git add -f images/ 2>/dev/null || true
           if [ -z "$(git status --porcelain)" ]; then
             echo "No new posts – skipping commit."
