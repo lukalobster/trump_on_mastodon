@@ -1,49 +1,68 @@
 
-## Post detected at 2026-04-03 11:25:48 UTC
+## Post detected at 2026-04-04 05:45:18 UTC
 
-**Posted on Truth Social:** Apr 3, 2026 · 2:41 AM UTC
+**Posted on Truth Social:** Apr 4, 2026 · 3:21 AM UTC
 
-**Source:** [https://truthsocial.com/@realDonaldTrump/116338464010194156](https://truthsocial.com/@realDonaldTrump/116338464010194156)
+**Source:** [https://truthsocial.com/@realDonaldTrump/116344282496536118](https://truthsocial.com/@realDonaldTrump/116344282496536118)
 
-**Post ID:** `116338464010194156`
+**Post ID:** `116344282496536118`
 
 ### Text
 
-Our Military, the greatest and most powerful (by far!) anywhere in the World, hasn’t even started destroying what’s left in Iran. Bridges next, then Electric Power Plants! New Regime leadership knows what has to be done, and has to be done, FAST! President DONALD J.TRUMP
+Believers and people of faith find safe harbor in Trump's White House this Easter: https://justthenews.com/government/white-house/he-risen-faith-finds-safe-harbor-trump-white-house
 
 ### Post Card
 
-![Post card](images/116338464010194156_card.png)
+![Post card](images/116344282496536118_card.png)
 
 
 ---
 
-## Post detected at 2026-04-03 11:25:48 UTC
+## Post detected at 2026-04-04 05:45:18 UTC
 
-**Posted on Truth Social:** Apr 2, 2026 · 10:32 PM UTC
+**Posted on Truth Social:** Apr 4, 2026 · 3:03 AM UTC
 
-**Source:** [https://truthsocial.com/@realDonaldTrump/116337483523761845](https://truthsocial.com/@realDonaldTrump/116337483523761845)
+**Source:** [https://truthsocial.com/@realDonaldTrump/116344212584161103](https://truthsocial.com/@realDonaldTrump/116344212584161103)
 
-**Post ID:** `116337483523761845`
+**Post ID:** `116344212584161103`
 
 ### Text
 
-I would like to thank the hardworking Commissioners and Staff of the National Capital Planning Commission, who just voted overwhelmingly, 8-1, to approve the magnificent White House Ballroom now rising on this Hallowed Ground. I am pleased to announce that even Board Member Senator Rand Paul, known as an extraordinarily difficult vote, voted a strong YES. For more than 150 years, every President has dreamt about having a Ballroom at the White House to accommodate people for Grand Parties, State Visits, and even, in the Modern Day, Inaugurations. I am honored to be the first President to finally get this much-needed project, which is on time and under budget, underway. When completed, it will be the Greatest and Most Beautiful Ballroom of its kind anywhere in the World, and a fabulous complement to our Beautiful and Storied White House! President DONALD J. TRUMP
+178,000 new jobs in March. Unemployment DOWN. Great numbers by all accounts, even the Fake News. MAGA!
 
 ### Post Card
 
-![Post card](images/116337483523761845_card.png)
+![Post card](images/116344212584161103_card.png)
 
 
 ---
 
-## Post detected at 2026-04-03 11:25:48 UTC
+## Post detected at 2026-04-04 05:45:18 UTC
 
-**Posted on Truth Social:** Apr 2, 2026 · 10:29 PM UTC
+**Posted on Truth Social:** Apr 4, 2026 · 2:58 AM UTC
 
-**Source:** [https://truthsocial.com/@realDonaldTrump/116337474135003522](https://truthsocial.com/@realDonaldTrump/116337474135003522)
+**Source:** [https://truthsocial.com/@realDonaldTrump/116344192713238962](https://truthsocial.com/@realDonaldTrump/116344192713238962)
 
-**Post ID:** `116337474135003522`
+**Post ID:** `116344192713238962`
+
+### Text
+
+Third rate news “anchor” Jonathan Karl of ABC Fake News, the worst and most corrupt Network in the business, wrote another made up book about me where his stories and “reporting” bare no relationship to the truth. ABC was already forced to pay me $16,000,000 because of their false and misleading reporting. That was a Liddle’ George Slopadopolus error, but Karl is worse. A waste of time - Fictitious quotes. Don’t buy the book! President DJT
+
+### Post Card
+
+![Post card](images/116344192713238962_card.png)
+
+
+---
+
+## Post detected at 2026-04-04 05:45:18 UTC
+
+**Posted on Truth Social:** Apr 3, 2026 · 11:10 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116343295412245120](https://truthsocial.com/@realDonaldTrump/116343295412245120)
+
+**Post ID:** `116343295412245120`
 
 ### Text
 
@@ -51,31 +70,88 @@ I would like to thank the hardworking Commissioners and Staff of the National Ca
 
 ### Post Card
 
-![Post card](images/116337474135003522_card.png)
+![Post card](images/116343295412245120_card.png)
 
 
 ---
 
-## Post detected at 2026-04-03 11:25:48 UTC
+## Post detected at 2026-04-04 05:45:18 UTC
 
-**Posted on Truth Social:** Apr 2, 2026 · 10:29 PM UTC
+**Posted on Truth Social:** Apr 3, 2026 · 9:53 PM UTC
 
-**Source:** [https://truthsocial.com/@realDonaldTrump/116337473284766361](https://truthsocial.com/@realDonaldTrump/116337473284766361)
+**Source:** [https://truthsocial.com/@realDonaldTrump/116342994589318293](https://truthsocial.com/@realDonaldTrump/116342994589318293)
 
-**Post ID:** `116337473284766361`
+**Post ID:** `116342994589318293`
 
 ### Text
 
-
+A very happy and blessed Good Friday to all, especially to the 186,000 Americans who gained Private Sector jobs in the month of March alone! My Economic Policies have created an enormously powerful engine of Economic Growth, and nothing can slow it down. Factory Construction Jobs are soaring as a result of the rapid Onshoring and surging Investment that TARIFFS have generated, all while the Trade Deficit has shrunk by 52% in a year! President DONALD J. TRUMP
 
 ### Post Card
 
-![Post card](images/116337473284766361_card.png)
+![Post card](images/116342994589318293_card.png)
 
 
 ---
 
-## Post detected at 2026-04-03 08:36:27 UTC
+## Post detected at 2026-04-04 05:45:18 UTC
+
+**Posted on Truth Social:** Apr 3, 2026 · 7:20 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116342393448469434](https://truthsocial.com/@realDonaldTrump/116342393448469434)
+
+**Post ID:** `116342393448469434`
+
+### Text
+
+KEEP THE OIL, ANYONE?
+
+### Post Card
+
+![Post card](images/116342393448469434_card.png)
+
+
+---
+
+## Post detected at 2026-04-04 05:45:18 UTC
+
+**Posted on Truth Social:** Apr 3, 2026 · 12:22 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116340751005894827](https://truthsocial.com/@realDonaldTrump/116340751005894827)
+
+**Post ID:** `116340751005894827`
+
+### Text
+
+With a little more time, we can easily OPEN THE HORMUZ STRAIT, TAKE THE OIL, & MAKE A FORTUNE. IT WOULD BE A “GUSHER” FOR THE WORLD??? President DONALD J. TRUMP
+
+### Post Card
+
+![Post card](images/116340751005894827_card.png)
+
+
+---
+
+## Post detected at 2026-04-04 05:45:18 UTC
+
+**Posted on Truth Social:** Apr 3, 2026 · 12:05 PM UTC
+
+**Source:** [https://truthsocial.com/@realDonaldTrump/116340682613576162](https://truthsocial.com/@realDonaldTrump/116340682613576162)
+
+**Post ID:** `116340682613576162`
+
+### Text
+
+Vice President JD Vance is now in charge of “FRAUD” in the United States. It is massive and pervasive, and the job he will be doing, in conjunction with many great people within the Trump Administration, will be a major factor in how great the future of our Country will be. We will call him the “FRAUD CZAR,” and his focus will be “EVERYWHERE,” but primarily in those Blue States where CROOKED DEMOCRAT POLITICIANS, like those in California, Illinois, Minnesota (Somalia beware!), Maine, New York, and many others, have had a “free for all” in the unprecedented theft of Taxpayer Money. The numbers are so large that, if successful, we would literally be able to balance our American Budget. Raids have already started in L.A. Good Luck JD!
+
+### Post Card
+
+![Post card](images/116340682613576162_card.png)
+
+
+---
+
+## Post detected at 2026-04-04 05:45:18 UTC
 
 **Posted on Truth Social:** Apr 3, 2026 · 1:21 AM UTC
 
@@ -94,8 +170,7 @@ Is Bruce Springsteen going to sue his plastic surgeon?
 
 ---
 
-
-## Post detected at 2026-04-03 08:36:27 UTC
+## Post detected at 2026-04-04 05:45:18 UTC
 
 **Posted on Truth Social:** Apr 2, 2026 · 10:32 PM UTC
 
@@ -113,84 +188,3 @@ I would like to thank the hardworking Commissioners and Staff of the National Ca
 
 
 ---
-
-
-## Post detected at 2026-04-03 08:36:27 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 10:29 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116337474135003522](https://truthsocial.com/@realDonaldTrump/116337474135003522)
-
-**Post ID:** `116337474135003522`
-
-### Text
-
-
-
-### Post Card
-
-![Post card](images/116337474135003522_card.png)
-
-
----
-
-
-## Post detected at 2026-04-03 08:36:27 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 10:29 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116337473284766361](https://truthsocial.com/@realDonaldTrump/116337473284766361)
-
-**Post ID:** `116337473284766361`
-
-### Text
-
-
-
-### Post Card
-
-![Post card](images/116337473284766361_card.png)
-
-
----
-
-
-## Post detected at 2026-04-03 08:36:27 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 5:43 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116336350249896927](https://truthsocial.com/@realDonaldTrump/116336350249896927)
-
-**Post ID:** `116336350249896927`
-
-### Text
-
-Davy Crockett, obviously a distant relative of Jasmine Crockett, and a very High IQ Frontiersman, would be proud of the legacy that he began long ago, and especially Jasmine’s Great Success as a Politician from the Great State of Texas! President DONALD J. TRUMP
-
-### Post Card
-
-![Post card](images/116336350249896927_card.png)
-
-
----
-
-
-## Post detected at 2026-04-03 08:36:27 UTC
-
-**Posted on Truth Social:** Apr 2, 2026 · 5:17 PM UTC
-
-**Source:** [https://truthsocial.com/@realDonaldTrump/116336247856387679](https://truthsocial.com/@realDonaldTrump/116336247856387679)
-
-**Post ID:** `116336247856387679`
-
-### Text
-
-Pam Bondi is a Great American Patriot and a loyal friend, who faithfully served as my Attorney General over the past year. Pam did a tremendous job overseeing a massive crackdown in Crime across our Country, with Murders plummeting to their lowest level since 1900. We love Pam, and she will be transitioning to a much needed and important new job in the private sector, to be announced at a date in the near future, and our Deputy Attorney General, and a very talented and respected Legal Mind, Todd Blanche, will step in to serve as Acting Attorney General. Thank you for your attention to this matter! President DONALD J. TRUMP
-
-### Post Card
-
-![Post card](images/116336247856387679_card.png)
-
-
----
-
